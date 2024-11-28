@@ -1,0 +1,91 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AutoFlex - Automóveis Gerais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>AutoFlex</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre-nos">Sobre nós</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <section id="home">
+        <h2>Bem-vindo à AutoFlex!</h2>
+        <p>Na AutoFlex, oferecemos os melhores automóveis para você. De carros de passeio a caminhões e motos, temos veículos de alta qualidade, com garantia e excelente atendimento ao cliente. Compre com confiança e faça parte da nossa família de clientes satisfeitos!</p>
+        <img src="imagens/destaque.jpg" alt="Imagem de carros" width="100%" style="max-width: 900px; height: auto;">
+    </section>
+
+    <!-- Seção Sobre a Empresa -->
+    <section id="sobre-nos">
+        <h2>Sobre a AutoFlex</h2>
+        <p>A AutoFlex é uma empresa especializada na venda de automóveis, com foco em oferecer aos nossos clientes uma experiência de compra segura e satisfatória. Com anos de experiência no mercado, nossa missão é fornecer veículos de qualidade, para todos os gostos e necessidades.</p>
+        <img src="imagens/sobre-nos.jpg" alt="Imagem da equipe AutoFlex" width="100%" style="max-width: 900px; height: auto;">
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos">
+        <h2>Nosso Catálogo</h2>
+        <div class="produto-list">
+            <article class="produto-item">
+                <h3>Carro Elétrico</h3>
+                <img src="imagens/carro-eletrico.jpg" alt="Carro Elétrico" width="100%" style="max-width: 400px; height: auto;">
+                <p>Preço: R$ 120.000</p>
+            </article>
+
+            <article class="produto-item">
+                <h3>Moto Esportiva</h3>
+                <img src="imagens/moto-esportiva.jpg" alt="Moto Esportiva" width="100%" style="max-width: 400px; height: auto;">
+                <p>Preço: R$ 25.000</p>
+            </article>
+
+            <article class="produto-item">
+                <h3>Caminhão de Carga</h3>
+                <img src="imagens/caminhao-carga.jpg" alt="Caminhão de Carga" width="100%" style="max-width: 400px; height: auto;">
+                <p>Preço: R$ 250.000</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <p>Tem dúvidas? Precisa de mais informações? Entre em contato com nossa equipe e teremos prazer em ajudá-lo.</p>
+        <form action="envio_formulario.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 AutoFlex - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>
